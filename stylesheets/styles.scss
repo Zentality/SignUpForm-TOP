@@ -5,7 +5,6 @@ $dark-text: rgb(20,20,20);
 
 *{
   color: inherit;
-  font-display: optional;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   margin: 0;
@@ -85,7 +84,13 @@ body {
 
   form {
     background-color: white;
-    padding: 16px 32px;
+    padding: 32px;
+    box-shadow: 0 4px 16px 0px rgb(150,150,150);
+
+    h1 {
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+    }
     
     fieldset {
       border: none;
@@ -95,6 +100,7 @@ body {
       display: block;
       width: 40%;
       margin-top: 24px;
+      letter-spacing: 0.07rem;
     }
 
     input {
@@ -110,6 +116,21 @@ body {
       padding: 0;
       display: flex;
       flex-wrap: wrap;
+    }
+  }
+
+  .formSubmission {
+    padding: 48px 32px;
+
+    button {
+      margin-bottom: 16px;
+      padding: 14px 40px;
+      background-color: rgb(150,150,150);
+      border: 1px solid rgb(140,140,140);
+      border-radius: 12px;
+      color: $light-text;
+      font-size: 1.4em;
+      font-weight: 700;
     }
   }
 }
