@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap');
 
+$light-text: rgb(240,240,240);
+$dark-text: rgb(20,20,20);
+
 *{
-  color: rgb(240,240,240);
+  color: inherit;
   font-display: optional;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+}
+
+:root {
+  color: $dark-text;
 }
 
 /* temp values for layout */
@@ -25,7 +32,7 @@ body {
     image: url('../images/fredrik-solli-wandem-unsplash.jpg');
     position: center center;
     size: cover;
-    color: rgb(32, 35, 44);
+    color: rgb(32, 35, 44); //fallback if background image fails to load
   }
   position: relative;
   width: 35%;
@@ -34,6 +41,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: $light-text;
   .logo {
     margin-top: -50%;
     width: 100%;
@@ -67,4 +75,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgb(235, 235, 240);
+  fieldset {
+    background-color: white;
+  }
 }
