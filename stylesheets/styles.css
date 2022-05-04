@@ -5,16 +5,11 @@
   font-family: 'Roboto', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
 }
 
 :root {
   color: #141414;
-}
-
-/* temp values for layout */
-body, div {
-  border: 1px solid red;
-  padding: 5px;
 }
 
 body {
@@ -103,14 +98,34 @@ body {
   background-color: #ebebf0;
 }
 
-.right form {
-  background-color: white;
-  padding: 0;
+.right .formText {
+  padding: 0 32px 64px 32px;
+  width: 70%;
+  font-size: 1.6rem;
 }
 
-.right form label, .right form input {
+.right form {
+  background-color: white;
+  padding: 16px 32px;
+}
+
+.right form fieldset {
+  border: none;
+}
+
+.right form label {
   display: block;
   width: 40%;
+  margin-top: 24px;
+}
+
+.right form input {
+  display: block;
+  height: 32px;
+  width: 70%;
+  border: 1px solid #d2d2dc;
+  border-radius: 6px;
+  margin-top: 4px;
 }
 
 .right form fieldset {

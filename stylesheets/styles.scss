@@ -8,16 +8,11 @@ $dark-text: rgb(20,20,20);
   font-display: optional;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  margin: 0;
 }
 
 :root {
   color: $dark-text;
-}
-
-/* temp values for layout */
-body, div {
-  border: 1px solid red;
-  padding: 5px;
 }
 
 body {
@@ -34,6 +29,7 @@ body {
     size: cover;
     color: rgb(32, 35, 44); //fallback if background image fails to load
   }
+
   position: relative;
   width: 35%;
   height: 100%;
@@ -42,6 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   color: $light-text;
+
   .logo {
     margin-top: -50%;
     width: 100%;
@@ -50,16 +47,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
     h1 {
       margin: 0;
       font-size: 4rem;
       font-family: "Oswald", "Roboto", sans-serif;
       letter-spacing: -0.2rem;
     }
+
     img {
       height: 7rem;
     }
   }
+
   .author {
     width: 100%;
     position: absolute;
@@ -76,13 +76,36 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: rgb(235, 235, 240);
+
+  .formText {
+    padding: 0 32px 64px 32px;
+    width: 70%;
+    font-size: 1.6rem;
+  }
+
   form {
     background-color: white;
-    padding: 0;
-    label, input {
+    padding: 16px 32px;
+    
+    fieldset {
+      border: none;
+    }
+
+    label {
       display: block;
       width: 40%;
+      margin-top: 24px;
     }
+
+    input {
+      display: block;
+      height: 32px;
+      width: 70%;
+      border: 1px solid rgb(210,210,220);
+      border-radius: 6px;
+      margin-top: 4px;
+    }
+
     fieldset {
       padding: 0;
       display: flex;
