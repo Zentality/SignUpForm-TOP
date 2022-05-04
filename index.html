@@ -27,22 +27,22 @@
       <h1>Account Sign Up</h1>
       <fieldset>
         <label>First Name 
-          <input type="text" name="firstName" placeholder=" " required>
+          <input type="text" name="firstName" placeholder=" " maxlength="20" required>
         </label>
         <label>Last Name (Optional)
-          <input type="text" name="lastName" placeholder=" ">
+          <input type="text" name="lastName" placeholder=" " maxlength="20">
         </label>
         <label>Email 
-          <input type="email" name="email" placeholder=" " required>
+          <input type="email" name="email" placeholder=" " maxlength="40" required>
         </label>
         <label>Phone (Optional)
-          <input type="text" name="phone" placeholder=" ">
+          <input type="text" name="phone" placeholder=" " title="Phone number must be between 8-14 characters and numbers only" minlength="8" maxlength="14" pattern="([0-9]*)">
         </label>
         <label>Password 
-          <input type="password" name="password" placeholder=" " required>
+          <input type="password" name="password" placeholder=" " minlength="4" maxlength="80" required>
         </label>
         <label>Confirm Password 
-          <input type="password" name="passwordConfirm" placeholder=" " required>
+          <input type="password" name="passwordConfirm" placeholder=" " minlength="4" maxlength="80" required>
         </label>
       </fieldset>
     </form>
