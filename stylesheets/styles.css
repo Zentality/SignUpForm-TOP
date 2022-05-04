@@ -144,13 +144,22 @@ body {
 
 .right form input:focus-visible {
   outline: none;
-  border: 2px solid blue;
-  background-color: #fafafa;
+  border: 2px solid blue !important;
+  background-color: #fafafa !important;
   position: relative;
   left: 1px;
   top: 1px;
   -webkit-box-shadow: 2px 2px 6px grey;
           box-shadow: 2px 2px 6px grey;
+}
+
+.right form input:valid:not(:placeholder-shown) {
+  border: 2px solid green;
+}
+
+.right form input:invalid:not(:placeholder-shown) {
+  background-color: #fff0f0;
+  border: 2px solid red;
 }
 
 .right form fieldset {
