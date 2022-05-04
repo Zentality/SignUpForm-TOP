@@ -19,10 +19,11 @@
   </div>
 
   <div class="right">
-    <form action="example.com" method="post">
-      <div class="formText"><p>This is not a real online service! This web form page has been set up as part of The Odin Project. At the time of creating this webpage I am a beginner learning to become a full stack developer. I hope you like my work</p></div>
+    <div class="formText"><p>This is not a real online service! This web form page has been set up as part of The Odin Project. At the time of creating this webpage I am a beginner learning to become a full stack developer. I hope you like my work</p></div>
+
+    <form id="signUp" action="" method="post">
+      <h2>Account Sign Up</h2>
       <fieldset>
-        <legend>Account Sign Up Details</legend>
         <label>First Name <input type="text"></label>
         <label>Last Name <input type="text"></label>
         <label>Email <input type="email"></label>
@@ -30,11 +31,12 @@
         <label>Password <input type="password"></label>
         <label>Confirm Password <input type="password"></label>
       </fieldset>
-      <div class="formButtons">
-        <button>Create Account</button>
-        <p>Already have an account? <a href="example.com">Log in</a></p>
-      </div>
     </form>
+
+    <div class="formSubmission">
+      <button type="submit" form="signUp">Create Account</button>
+      <p>Already have an account? <a href="example.com">Log in</a></p>
+    </div>
   </div>
 
   <script src="script.js"></script>

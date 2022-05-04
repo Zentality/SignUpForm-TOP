@@ -76,7 +76,17 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: rgb(235, 235, 240);
-  fieldset {
+  form {
     background-color: white;
+    padding: 0;
+    label, input {
+      display: block;
+      width: 40%;
+    }
+    fieldset {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }

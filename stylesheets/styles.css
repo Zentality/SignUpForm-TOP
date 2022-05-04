@@ -103,7 +103,22 @@ body {
   background-color: #ebebf0;
 }
 
-.right fieldset {
+.right form {
   background-color: white;
+  padding: 0;
+}
+
+.right form label, .right form input {
+  display: block;
+  width: 40%;
+}
+
+.right form fieldset {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=styles.css.map */
